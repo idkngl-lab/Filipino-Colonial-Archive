@@ -1,0 +1,9 @@
+{
+  "name": "Filipino Colonial Archive",
+  "short_name": "FCA",
+  "description": "placeholder description",
+  "start_url": "/Filipino Colonial Archive/",
+  "scope": "/Filipino Colonial Archive/",
+  "display": "standalone"
+  
+}

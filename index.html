@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Filipino Colonial Archive</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:white;
+font-family:'Montserrat',sans-serif;
+overflow-x:hidden;
+}
+
+/* NAVIGATION */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:black;
+border-bottom:2px solid #b8942c;
+z-index:1000;
+}
+
+.logo{
+font-size:1rem;
+letter-spacing:2px;
+color:#b8942c;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+letter-spacing:2px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#b8942c;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+padding-left:10%;
+background:
+linear-gradient(
+rgba(0,0,0,.75),
+rgba(0,0,0,.75)
+),
+url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?q=80&w=2070');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:6rem;
+font-family:'Cormorant Garamond',serif;
+color:#b8942c;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.3rem;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.buttons{
+display:flex;
+gap:20px;
+}
+
+.btn{
+background:#b8942c;
+color:black;
+padding:15px 30px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.btn-outline{
+border:2px solid #b8942c;
+color:#b8942c;
+padding:15px 30px;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn-outline:hover{
+background:#b8942c;
+color:black;
+}
+
+/* ABOUT SECTION */
+
+.about{
+padding:120px 10%;
+text-align:center;
+}
+
+.about h2{
+font-size:4rem;
+font-family:'Cormorant Garamond',serif;
+color:#b8942c;
+margin-bottom:30px;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+line-height:1.8;
+font-size:1.1rem;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:60px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border:1px solid #b8942c;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#b8942c;
+}
+
+/* TIMELINE */
+
+.timeline{
+padding:120px 10%;
+background:#090909;
+}
+
+.timeline h2{
+text-align:center;
+font-size:4rem;
+font-family:'Cormorant Garamond',serif;
+color:#b8942c;
+margin-bottom:50px;
+}
+
+.timeline-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.event{
+background:#111;
+padding:25px;
+width:220px;
+border-left:4px solid #b8942c;
+}
+
+.event h3{
+color:#b8942c;
+margin-bottom:10px;
+}
+
+/* GALLERY */
+
+.gallery{
+padding:120px 10%;
+text-align:center;
+}
+
+.gallery h2{
+font-size:4rem;
+font-family:'Cormorant Garamond',serif;
+color:#b8942c;
+margin-bottom:50px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery-item{
+height:250px;
+background:#111;
+border:1px solid #b8942c;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:1.2rem;
+transition:.3s;
+cursor:pointer;
+}
+
+.gallery-item:hover{
+transform:scale(1.03);
+}
+
+/* FOOTER */
+
+footer{
+padding:40px;
+text-align:center;
+border-top:1px solid #b8942c;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:4rem;
+}
+
+.hero{
+padding:0 8%;
+text-align:center;
+}xs
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+FILIPINO COLONIAL ARCHIVE
+</div>
+
+<ul>
+<li><a href="#home">HOME</a></li>
+<li><a href="#about">SECTIONS</a></li>
+<li><a href="#Visual Arts">VISUAL ARTS</a></li>
+<li><a href="#timeline">TIMELINE</a></li>
+<li><a href="#gallery">GALLERY</a></li>
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Colonial Philippines</h1>
+
+<p>
+Exploring the struggles, resistance, and resilience of Filipinos during the Spanish and American colonial periods.
+</p>
+
+<div class="buttons">
+
+<a href="#about" class="btn">
+Explore History
+</a>
+
+<a href="visualarts.html" class="btn-outline">
+Visual Arts
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>Historical Struggles</h2>
+
+<p>
+For centuries, Filipinos lived under colonial rule. Heavy taxation, forced labor, social inequality, and restrictions on freedom shaped daily life. Despite these hardships, Filipinos continued to fight for independence and preserve their cultural identity.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Spanish Rule</h3>
+<p>
+More than 300 years of Spanish colonization influenced religion, education, and government while imposing hardships on many Filipinos.
+</p>
+</div>
+
+<div class="card">
+<h3>Resistance</h3>
+<p>
+National heroes and revolutionary groups challenged colonial authority and inspired the movement for freedom.
+</p>
+</div>
+
+<div class="card">
+<h3>American Period</h3>
+<p>
+The American era introduced new systems of education and governance while debates over independence continued.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="timeline" id="timeline">
+
+<h2>Timeline</h2>
+
+<div class="timeline-container">
+
+<div class="event">
+<h3>1521</h3>
+<p>Magellan arrives in the Philippines.</p>
+</div>
+
+<div class="event">
+<h3>1565</h3>
+<p>Spanish colonization officially begins.</p>
+</div>
+
+<div class="event">
+<h3>1896</h3>
+<p>Philippine Revolution begins.</p>
+</div>
+
+<div class="event">
+<h3>1898</h3>
+<p>Declaration of Independence.</p>
+</div>
+
+<div class="event">
+<h3>1901</h3>
+<p>American colonial administration established.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+<h2>Historical Gallery</h2>
+
+<div class="gallery-grid">
+
+<div class="gallery-item">Colonial Life</div>
+
+<div class="gallery-item">Filipino Resistance</div>
+
+<div class="gallery-item">National Heroes</div>
+
+<div class="gallery-item">Cultural Heritage</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Filipino Colonial Archive
+</p>
+
+</footer>
+
+</body>
+</html>
